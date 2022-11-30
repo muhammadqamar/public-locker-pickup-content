@@ -1,0 +1,112 @@
+.pickup__hero {
+  max-width: 1440px;
+  margin: 57px auto 64px;
+  padding: 0 32px;
+
+  @media (max-width: 999px) {
+    margin: 0 auto 48px;
+    padding: 0 16px;
+  }
+
+  .pickup__hero-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    text-align: left;
+    color: #260661;
+    padding-left: 16px;
+    border-left: 5px solid var(--red-400);
+    margin: 0 0 16px;
+    display: block;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .pickup_bg_image_box {
+    width: 100%;
+    height: auto;
+    background: #efefe6;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0 84px 100px;
+    gap: 40px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      padding: 30px 0 30px 16px;
+      align-items: flex-start;
+    }
+    @media (min-width: 768px) and (max-width: 992px) {
+      padding: 70px 0 70px 24px;
+      align-items: flex-start;
+    }
+    @media (min-width: 992px) and (max-width: 1400px) {
+      padding: 70px 0 57px 71px;
+    }
+
+    .hero_content {
+      margin-top: 38px;
+      .hero_exp_pickup_img {
+        width: 358px;
+        height: auto;
+        margin-bottom: 76px;
+
+        @media (max-width: 699px) {
+          margin-bottom: 36px;
+        }
+
+        @media (max-width: 499px) {
+          width: 258px;
+        }
+      }
+
+      .pickup-hero-text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        letter-spacing: 0.01em;
+        color: #260661;
+        margin: 0 0 155px;
+
+        @media (max-width: 499px) {
+          width: 100%;
+        }
+
+        @media (max-width: 699px) {
+          margin-bottom: 36px;
+        }
+      }
+
+      .hero_user_box {
+        width: 157px;
+        height: 121px;
+        object-fit: contain;
+
+        @media (max-width: 480px) {
+          width: 90px;
+          height: auto;
+        }
+      }
+    }
+
+    .hero_public_order {
+      width: auto;
+      height: auto;
+
+      @media (max-width: 770px) {
+        margin: 0;
+      }
+      @media (min-width: 770px) and (max-width: 992px) {
+        width: 50%;
+      }
+
+      @media (min-width: 992px) and (max-width: 1400px) {
+        width: 60%;
+      }
+    }
+  }
+}
